@@ -1,5 +1,14 @@
+import { Route, Routes } from "react-router-dom";
+import RobotsPage from "./pages/RobotsPage/RobotsPage";
+
 function App() {
-  return <></>;
+  return (
+    <main>
+      <Routes>
+        <Route path="/" element={<RobotsPage />}></Route>
+      </Routes>
+    </main>
+  );
 }
 
 export default App;
