@@ -10,7 +10,7 @@ describe("Given a Robot component", () => {
         image: "",
         speed: 1,
         strength: 2,
-        date_of_creation: "2022-02-18",
+        date_of_creation: "2022",
       };
 
       render(<Robot robot={robot} />);
@@ -27,7 +27,7 @@ describe("Given a Robot component", () => {
         image: "",
         speed: 1,
         strength: 2,
-        date_of_creation: "2022-02-18",
+        date_of_creation: "2022",
       };
 
       render(<Robot robot={robot} />);
@@ -38,22 +38,22 @@ describe("Given a Robot component", () => {
     });
   });
 
-  describe("When it receives robot with speed '1', strength '2' date_of_creation '2022-02-15'", () => {
-    test("Then it should display text 'Speed: 1' 'Strength: 2' 'Date of creation: 2022-02-15'", () => {
+  describe("When it receives robot with speed '1', strength '2' date_of_creation '2022'", () => {
+    test("Then it should display text 'Speed: 1' 'Strength: 2' 'Date of creation: 2022", () => {
       const robot = {
         id: 1,
         name: "Proton",
         image: "",
         speed: 1,
         strength: 2,
-        date_of_creation: "2022-02-15",
+        date_of_creation: "2022",
       };
 
       render(<Robot robot={robot}></Robot>);
 
       const expectedSpeedText = "Speed: 1";
       const expectedStrengthText = "Strength: 2";
-      const expectedDateText = "Date of creation: 2022-02-15";
+      const expectedDateText = "Date of creation: 2022";
 
       const speedText = screen.getByText(expectedSpeedText);
       const strengthText = screen.getByText(expectedStrengthText);
